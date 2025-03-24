@@ -11,6 +11,9 @@
     "lint": "eslint . --fix"
   },
   "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 85,
@@ -30,5 +33,8 @@
   },
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
 }
